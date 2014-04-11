@@ -31,13 +31,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 		//echo $this->Html->css('cake.generic');
 
-		// Twitter Bootstrap, JQuery, JQueryUI
+		// Twitter Bootstrap, JQuery, JQueryUI, JQueryDataTables
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('bootstrap-responsive.min');
+		echo $this->Html->css('jquery.dataTables');
 		echo $this->Html->css('jquery-ui-1.10.4.custom.min');
 
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('jquery-1.11.0.min');
+		echo $this->Html->script('jquery.dataTables.min');
 		echo $this->Html->script('jquery-ui-1.10.4.custom.min');
 
 		echo $this->fetch('meta');
