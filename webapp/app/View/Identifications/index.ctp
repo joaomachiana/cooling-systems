@@ -10,16 +10,14 @@
 			<tr>
 				<th><?php echo $this->BootstrapPaginator->sort('identification_type_id');?></th>
 				<th><?php echo $this->BootstrapPaginator->sort('type');?></th>
-				<th><?php echo $this->BootstrapPaginator->sort('created');?></th>
-				<th><?php echo $this->BootstrapPaginator->sort('modified');?></th>
+                <th><?php echo $this->BootstrapPaginator->sort('acronym');?></th>
 				<th class="actions"><?php echo __('Actions');?></th>
 			</tr>
 		<?php foreach ($identificationTypes as $identificationType): ?>
 			<tr>
 				<td><?php echo h($identificationType['IdentificationType']['identification_type_id']); ?>&nbsp;</td>
 				<td><?php echo h($identificationType['IdentificationType']['type']); ?>&nbsp;</td>
-				<td><?php echo h($identificationType['IdentificationType']['created']); ?>&nbsp;</td>
-				<td><?php echo h($identificationType['IdentificationType']['modified']); ?>&nbsp;</td>
+				<td><?php echo h($identificationType['IdentificationType']['acronym']); ?>&nbsp;</td>
 				<td class="actions">
 					<?php echo $this->Html->link(__('View'), array('action' => 'view', $identificationType['IdentificationType']['identification_type_id'])); ?>
 					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $identificationType['IdentificationType']['identification_type_id'])); ?>

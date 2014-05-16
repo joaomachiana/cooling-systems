@@ -52,6 +52,8 @@ class IdentificationTypesController extends AppController {
 		$this->set('identificationType', $this->IdentificationType->read(null, $id));
 	}
 
+    // @todo Adicionar validacao para verificar se tal IdentificationType já foi previamente inserido ou nao no sistema
+
 /**
  * add method
  *

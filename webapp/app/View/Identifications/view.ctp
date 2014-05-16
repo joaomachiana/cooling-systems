@@ -2,7 +2,7 @@
 	<div class="span9">
 		<h2><?php  echo __('Identification Type');?></h2>
 		<dl>
-			<dt><?php echo __('Identification Type Id'); ?></dt>
+			<dt><?php echo __('Id'); ?></dt>
 			<dd>
 				<?php echo h($identificationType['IdentificationType']['identification_type_id']); ?>
 				&nbsp;
@@ -12,14 +12,9 @@
 				<?php echo h($identificationType['IdentificationType']['type']); ?>
 				&nbsp;
 			</dd>
-			<dt><?php echo __('Created'); ?></dt>
+			<dt><?php echo __('Acronym'); ?></dt>
 			<dd>
-				<?php echo h($identificationType['IdentificationType']['created']); ?>
-				&nbsp;
-			</dd>
-			<dt><?php echo __('Modified'); ?></dt>
-			<dd>
-				<?php echo h($identificationType['IdentificationType']['modified']); ?>
+				<?php echo h($identificationType['IdentificationType']['acronym']); ?>
 				&nbsp;
 			</dd>
 		</dl>
